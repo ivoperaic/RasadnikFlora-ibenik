@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "stranica"
+    label: "Stranica"
+    files:
+      - file: "index.html"
+        label: "Naslovna"
+        name: "index"
+        fields:
+          - { label: "Naslov", name: "title", widget: "string" }
+          - { label: "Sadržaj", name: "body", widget: "text" }
